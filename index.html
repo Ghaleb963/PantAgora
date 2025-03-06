@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PantAgora - سوق كل شيء</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- الخطوط -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --primary-color: #FF4B01;
+            --secondary-color: #FF7443;
+            --accent-light: #FF9D82;
+            --background-light: #FFB5A2;
+            --font-arabic: 'Cairo', sans-serif;
+            --font-logo: 'Poppins', sans-serif;
+        }
+
+        body {
+            font-family: var(--font-arabic);
+            background-color: #f8f9fa;
+        }
+
+        .navbar {
+            background-color: white !important;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .nav-brand {
+            font-family: var(--font-logo);
+            font-weight: 700;
+            letter-spacing: -0.5px;
+            font-size: 1.8rem;
+            color: var(--primary-color) !important;
+        }
+
+        .nav-link {
+            color: #333 !important;
+            font-size: 1.1rem;
+            transition: all 0.3s;
+        }
+
+        .nav-link:hover {
+            color: var(--primary-color) !important;
+        }
+
+        .hero-section {
+            background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+            padding: 150px 0 100px;
+            color: white;
+        }
+
+        .section-title {
+            color: var(--primary-color);
+            font-weight: 700;
+            margin-bottom: 50px;
+        }
+
+        .feature-card {
+            border: none;
+            transition: transform 0.3s;
+            background: white;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .team-member img {
+            width: 180px;
+            height: 180px;
+            object-fit: cover;
+            border: 3px solid var(--accent-light);
+        }
+
+        .contact-section {
+            background: var(--primary-color);
+            color: white;
+        }
+
+        .social-icon {
+            font-size: 1.5rem;
+            margin: 0 10px;
+            color: var(--primary-color);
+            transition: all 0.3s;
+        }
+
+        .social-icon:hover {
+            color: var(--secondary-color);
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- نافبار بيضاء -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand nav-brand" href="#">
+                PantAgora
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#features">المميزات</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#team">الفريق</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#download">التحميل</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">اتصل بنا</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- قسم البطل -->
+    <section class="hero-section">
+        <div class="container text-center">
+            <h1 class="display-4 fw-bold mb-4">نقدم لك الوقت لا المنتجات</h1>
+            <p class="lead mb-5">لا تضيع وقتك في البحث تجد ما تحتاجه بنقرة واحدة</p>
+            <div class="d-flex gap-3 justify-content-center">
+                <a href="#" class="btn btn-light btn-lg px-5">
+                    <i class="fab fa-google-play"></i> أندرويد
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم المميزات -->
+    <section id="features" class="py-5">
+        <div class="container">
+            <h2 class="section-title text-center">لماذا PantAgora؟</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 feature-card shadow-lg">
+                        <div class="card-body text-center p-4">
+                            <i class="fa-brands fa-searchengin fa-3x mb-4" style="color: #FF7443;"></i>
+                            <h3>بحث ذكي</h3>
+                            <p>استخدام الذكاء الاصطناعي للعثور على المنتجات بدقة وسرعة</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- إضافة المزيد من المميزات -->
+                <div class="col-md-4">
+                    <div class="card h-100 feature-card shadow-lg">
+                        <div class="card-body text-center p-4">
+                            <i class="fa-solid fa-map-location-dot fa-3x mb-4 " style="color: #FF7443;"></i>
+                            <h3>تحديد الموقع الجغرافي</h3>
+                            <p>احصل على أقرب عنوان متجر يبيع المنتج الذي تبحث عنه</p>
+                        </div>
+                    </div>
+                </div>
+                <!--three-->
+                <div class="col-md-4">
+                    <div class="card h-100 feature-card shadow-lg">
+                        <div class="card-body text-center p-4">
+                            <i class="fa-solid fa-store fa-3x mb-4 " style="color: #FF7443;"></i>
+                            <h3>بيع منتجاتك</h3>
+                            <p>كن جزء من مجتمعنا النامي من البائعين</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم الفريق -->
+    <section id="team" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="section-title text-center">فريقنا</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card text-center shadow">
+                        <div class="card-body">
+                            <h3>Abdalkareem Mahmoud</h3>
+                            <p class="text-muted">Founder & CEO</p>
+                            <div class="social-links">
+                                <a href="#" class="social-icon">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- إضافة المزيد من أعضاء الفريق -->
+                <div class="col-md-4">
+                    <div class="card text-center shadow">
+                        <div class="card-body">
+                            <h3>Ahmed Einieh</h3>
+                            <p class="text-muted">Back-End Developer</p>
+                            <div class="social-links">
+                                <a href="#" class="social-icon">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--2-->
+                <div class="col-md-4">
+                    <div class="card text-center shadow">
+                        <div class="card-body">
+                            <h3>Yousef Mahmoud</h3>
+                            <p class="text-muted">Graphic Designer</p>
+                            <div class="social-links">
+                                <a href="#" class="social-icon">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--3-->
+                <div class="col-md-4">
+                    <div class="card text-center shadow">
+                        <div class="card-body">
+                            <h3>Aya Hamoudeh</h3>
+                            <p class="text-muted">Flutter Developer</p>
+                            <div class="social-links">
+                                <a href="#" class="social-icon">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--4-->
+                <div class="col-md-4">
+                    <div class="card text-center shadow">
+                        <div class="card-body">
+                            <h3>Muhammad Aljuhni</h3>
+                            <p class="text-muted">Financial Manager</p>
+                            <div class="social-links">
+                                <a href="#" class="social-icon">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--5-->
+                <div class="col-md-4">
+                    <div class="card text-center shadow">
+                        <div class="card-body">
+                            <h3>Ghaleb Abbas Matar</h3>
+                            <p class="text-muted">Planner & Data Analyst</p>
+                            <div class="social-links">
+                                <a href="#" class="social-icon">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم الشهادات -->
+    <section id="testimonials" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">آراء العملاء</h2>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="card shadow">
+                        <div class="card-body">
+                            <blockquote class="blockquote mb-0">
+                                <p>لقد كنت أبحث دائماً عن طريقة سهلة للعثور على منتجات في منطقتي أتطلع بشغف لاستخدام
+                                    PantAgora </p>
+                                <footer class="blockquote-footer mt-3">علي عبد الرحمن,يعاني من إيجاد المنتجات الحصرية
+                                </footer>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+                <!-- المزيد من الشهادات -->
+                <div class="col-md-6">
+                    <div class="card shadow">
+                        <div class="card-body">
+                            <blockquote class="blockquote mb-0">
+                                <p>أعتقد أن PantAgora ستساعدني في الوصول إلى المزيد من العملاء وتعزيز مبيعاتي</p>
+                                <footer class="blockquote-footer mt-3">سمية فحام,تبيع أشغال يدوية</footer>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+                <!--3-->
+                <div class="col-md-6">
+                    <div class="card shadow">
+                        <div class="card-body">
+                            <blockquote class="blockquote mb-0">
+                                <p>التسوق يجب أن يكون ممتعاً وسهلاً أتمنى أن يحقق PantAgora هذا الهدف</p>
+                                <footer class="blockquote-footer mt-3">حسين المحمد,يعاني من الملل اثناء تسوق تقليدي
+                                </footer>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+                <!--4-->
+                <div class="col-md-6">
+                    <div class="card shadow">
+                        <div class="card-body">
+                            <blockquote class="blockquote mb-0">
+                                <p>أنا متحمسة لرؤية كيف سيستخدم PantAgora الذكاء الاصطناعي لتحسن تجربة التسوق</p>
+                                <footer class="blockquote-footer mt-3">ليلى العبدالله,مهتمة بتحول رقمي وبتحديد تجارة
+                                    إلكترونية</footer>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم التحميل -->
+    <section id="download" class="py-5 bg-white">
+        <div class="container text-center">
+            <h2 class="section-title">حمل التطبيق الآن</h2>
+            <div class="d-flex justify-content-center mt-4">
+                <a href="#" class="btn btn-primary btn-lg px-5">
+                    <i class="fab fa-google-play"></i> تحميل للأندرويد
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- قسم الأسئلة الشائعة -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">الأسئلة الشائعة</h2>
+            <div class="accordion" id="faqAccordion">
+                <div class="accordion-item">
+                    <h3 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                            ماذا نقدم؟ </button>
+                    </h3>
+                    <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            PantAgora هي منصة مبتكرة تهدف إلى ربط المستهلكين بالمتاجر المحلية بشكل فعال. نحن نعلم أن
+                            البحث عن منتج معين قد يكون محبطًا، خاصة عندما لا تعرف أين يمكنك العثور عليه.
+                        </div>
+                    </div>
+                </div>
+                <!-- المزيد من الأسئلة -->
+                <div class="accordion-item">
+                    <h3 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                            كيف تعمل؟ </button>
+                    </h3>
+                    <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            باستخدام تقنية الذكاء الاصطناعي المتقدمة، يمكنك ببساطة كتابة اسم المنتج الذي تبحث عنه
+                            بالعربية أو الإنجليزية، وسنقوم بتوجيهك إلى أقرب متجر يبيع هذا المنتج على الخريطة
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- قسم الاتصال -->
+    <section id="contact" class="contact-section py-5">
+        <div class="container">
+            <div class="row g-5 justify-content-center">
+                <div class="col-md-8">
+                    <h2 class=" text-white">نبذة عنا</h2>
+                    "PantAgora هو تطبيق مبتكر يهدف إلى تسهيل تجربة التسوق من خلال تمكين المستخدمين من العثور على
+                    المنتجات المحلية بسهولة ويسر. بفضل واجهته البسيطة والذكية، يمكن للمستخدمين استكشاف المتاجر القريبة،
+                    مقارنة الأسعار، والحصول على العروض الحصرية، مما يجعل التسوق تجربة ممتعة ومريحة."
+                </div>
+                <div class="col-md-4">
+<h2 class=" text-white">معلومات تواصل</h2>
+<ul style="list-style-type: none;">
+    <li><i class="fa-solid fa-envelope"></i> pantagora321@gmail.com</li>
+    <li><i class="fa-solid fa-phone"></i> +963 980 182 724</li>
+</ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- الفوتر -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <div class="social-links mb-3">
+                <a href="#" class="social-icon text-white">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="#" class="social-icon text-white">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#" class="social-icon text-white">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </div>
+            <p class="mb-0">© 2024 PantAgora. جميع الحقوق محفوظة</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
